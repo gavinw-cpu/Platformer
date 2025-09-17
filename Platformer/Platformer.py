@@ -15,13 +15,22 @@ PLATFORM_WIDTH = int(WIDTH * 0.05)
 
 class Player:
     def __init__(self):
-        pass
+        self.vx
+        self.vy
+        self.gravity = GRAVITY
+        self.player 
+        
     def handleInput(self, keys):
-        "X vel only"
+        keys = pygame.key.get_pressed
+        If keys[pyagme.K_D]
+            self.vx = .5
+        If key[pyagme.K_A]
+            self.vx = -.5
+            
     def applyGravity(self, dt):
     
     def jump(self):
-        #check if onground then jump by applying jump power to vel Y
+        if pygame.Rect.collide
 
     def update(self, dt, platforms, keys):
         #handles inputs, gravity and movement
@@ -65,4 +74,5 @@ class Game:
 
 game = Game()
 game.run()
+
 pygame.quit()
